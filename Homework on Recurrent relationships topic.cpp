@@ -1,34 +1,43 @@
 ////Topic 4 - Recurrent relationships
+//// 
 ////17) b1=4, b2=2, bn = (b_n-2/n) + (n^2/b_n-1)
 // 
 //#include <iostream>
-//#include <vector>
 //#include <iomanip>
 //
-//int main()
+//void task4_17()
 //{
 //    int n;
-//    std::cout << "Enter a number of sequence elements: ";
+//    std::cout << "Введите количество элементов последовательности: ";
 //    std::cin >> n;
 //
 //    if (n < 1) {
-//        std::cout << "The number of elements must be greater than 0\n";
-//        return 1;
+//        std::cout << "Некорректный ввод\n";
 //    }
 //
-//    std::vector<double> sequence(n);
+//    //Initial values
+//    double b1 = 4.0;
+//    double b2 = 2.0;
 //
-//    sequence[0] = 4.0;
-//    if (n > 1) sequence[1] = 2.0;
+//    std::cout << "Последовательность:\n";
 //
-//    for (int i = 2; i < n; ++i) {
-//        sequence[i] = (sequence[i - 2] / (i + 1.0)) + (((i + 1.0) * (i + 1.0)) / sequence[i - 1]);
+//    if (n >= 1) std::cout << "b1 = " << b1 << std::endl;
+//    if (n >= 2) std::cout << "b2 = " << b2 << std::endl;
+//
+//    for (int i = 3; i <= n; ++i) {
+//        double bn = (b1 / i) + ((i * i) / b2);
+//        std::cout << "b" << i << " = " << std::fixed << std::setprecision(2) << bn << std::endl;
+//
+//        //Shifting values for the next step
+//        b1 = b2;
+//        b2 = bn;
 //    }
 //
-//    std::cout << "Sequence elements:\n";
-//    for (int i = 0; i < n; ++i) {
-//        std::cout << "b" << i + 1 << " = " << std::fixed << std::setprecision(4) << sequence[i] << "\n";
-//    }
+//}
+//
+//int main()
+//{
+//    task4_17();
 //
 //    return 0;
 //}
