@@ -8,18 +8,18 @@
 //void task4_17()
 //{
 //    int n;
-//    std::cout << "Введите количество элементов последовательности: ";
+//    std::cout << "Enter a elements number: ";
 //    std::cin >> n;
 //
 //    if (n < 1) {
-//        std::cout << "Некорректный ввод\n";
+//        std::cout << "Incorrect input\n";
 //    }
 //
 //    //Initial values
 //    double b1 = 4.0;
 //    double b2 = 2.0;
 //
-//    std::cout << "Последовательность:\n";
+//    std::cout << "Sequence:\n";
 //
 //    if (n >= 1) std::cout << "b1 = " << b1 << std::endl;
 //    if (n >= 2) std::cout << "b2 = " << b2 << std::endl;
