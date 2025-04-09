@@ -1,9 +1,9 @@
 //Topic 4 - Recurrent relationships
-//Write a program that calculates the first n-elements of a given sequence
-//17) b1=4, b2=2, bn = (b_n-2/n) + (n^2/b_n-1)
- 
 #include <iostream>
 #include <iomanip>
+
+//Write a program that calculates the first n-elements of a given sequence
+//17) b1=4, b2=2, bn = (b_n-2/n) + (n^2/b_n-1)
 
 void task17()
 {
