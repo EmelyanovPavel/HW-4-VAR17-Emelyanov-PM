@@ -5,7 +5,7 @@
 //Write a program that calculates the first n-elements of a given sequence
 //17) b1=4, b2=2, bn = (b_n-2/n) + (n^2/b_n-1)
 
-void task17()
+void task1()
 {
     int n;
     std::cout << "Enter a elements number: ";
@@ -37,7 +37,7 @@ void task17()
 
 int main()
 {
-    task17();
+    task1();
 
     return 0;
 }
